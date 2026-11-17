@@ -204,7 +204,7 @@ page, component or file path. Useful options:
 |---|---|
 | `--direction upstream\|downstream` | Who depends on it, or what it depends on |
 | `--depth N` | How many hops to walk |
-| `--include-tests` | Include test code, which is left out by default and counted |
+| `--include-tests[=true\|false]` | Include test code. Left out by default and counted, except when the target or its class is `@isTest`: only test code can use it, so tests are followed automatically (`"testsIncluded": "auto: target is @isTest"`). `--include-tests=false` forces them off |
 | `--kind Flow`, `--file-path P`, `--uid ID` | Narrow down an ambiguous name |
 | `--summary-only` | Counts and risk only |
 
