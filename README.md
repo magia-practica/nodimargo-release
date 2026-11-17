@@ -530,7 +530,7 @@ systems of the same repository.
 | `NODIMARGO_HOME` | Registry and license directory (default `~/.nodimargo`) |
 | `NODIMARGO_DEFAULT_REPO` | Repo used when `--repo` is omitted |
 | `NODIMARGO_MCP_NAME` | MCP server name (default `nodimargo`) |
-| `NODIMARGO_IMPACT_DEFAULT_LIMIT` | MCP `impact` rows per depth (default 30) |
+| `NODIMARGO_IMPACT_DEFAULT_LIMIT` | MCP `impact` rows per depth on a first page (default 30). A call with `offset > 0` or `summaryOnly` and no `limit` uses 100 instead, as the CLI always does; pass `limit` on every page for a fixed page size |
 
 ## Known limitations
 
