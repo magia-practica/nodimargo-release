@@ -487,7 +487,7 @@ jobs:
 
       - name: Upload the report
         if: always() && github.event_name == 'pull_request'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: nodimargo-detect-changes
           path: detect.json
