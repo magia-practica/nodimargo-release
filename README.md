@@ -550,3 +550,7 @@ The Apex grammar is [`aheber/tree-sitter-sfapex`](https://github.com/aheber/tree
 (MIT). The JavaScript and TypeScript grammars are the upstream tree-sitter
 grammars (MIT). The metadata type registry is a snapshot of Salesforce's
 `source-deploy-retrieve` (Apache-2.0).
+
+The full license texts and copyright notices for these and for every Rust
+crate compiled into nodimargo are in `THIRD-PARTY-LICENSES.txt`, next to the
+binary in each release archive.
