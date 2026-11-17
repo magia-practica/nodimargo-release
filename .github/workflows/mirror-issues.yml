@@ -7,7 +7,7 @@ on:
 permissions: {}
 
 env:
-  PRIVATE_REPO: codefriar/nodiMargo
+  PRIVATE_REPO: magia-practica/nodiMargo
   MIRROR_LABEL: public-report
 
 jobs:
