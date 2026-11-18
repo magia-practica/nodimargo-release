@@ -75,8 +75,10 @@ are all linked to the objects and fields they use.
 Standard objects and fields you reference but don't define (`Account.Name`)
 still get a node, so every reference to them meets in one place. When
 nodiMargo can't be sure it found everything (a dynamic query built from
-variables, an untyped receiver), the result says `lower-bound` rather than
-claiming to be complete.
+variables, an untyped receiver, a source file with syntax errors or invalid
+UTF-8), the result says `lower-bound` rather than claiming to be complete.
+`analyze` lists files that didn't parse cleanly under `parse_issues`, and
+impact counts them in `parseIssueFiles`.
 
 ## Install
 
